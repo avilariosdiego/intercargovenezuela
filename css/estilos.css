@@ -1,0 +1,380 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Arial';
+  background-image: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url("../img/bg.webp");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+body::-webkit-scrollbar {
+  width: 14px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #d87724;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background: #305281;
+}
+
+#contenedor_loader {
+  background-color: #fff;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  -webkit-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+  z-index: 10000;
+}
+
+#loader {
+  height: 300px;
+  width: 300px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Arial';
+}
+
+p {
+  line-height: 1.75;
+}
+
+.text-faded {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.page-section {
+  margin-top: 0rem;
+  margin-bottom: 0rem;
+}
+
+#mainNav {
+  background-color: rgba(255, 255, 255, 0.8);
+  font-family: 'Arial';
+}
+
+#mainNav .navbar-brand {
+  color: #e6a756;
+}
+
+#mainNav .navbar-nav .nav-item .nav-link {
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: 700;
+}
+
+#mainNav .navbar-nav .nav-item.active .nav-link {
+  color: #e6a756;
+}
+
+@media (min-width: 992px) {
+  #mainNav .navbar-nav .nav-item .nav-link {
+   font-size: 0.8rem;
+ }
+ #mainNav .navbar-nav .nav-item .nav-link:hover {
+   color: rgba(255, 255, 255, 0.4);
+ }
+ #mainNav .navbar-nav .nav-item.active .nav-link:hover {
+   color: #e6a756;
+ }
+}
+
+.btn-xl {
+  font-weight: 700;
+  font-size: 0.8rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.intro {
+  position: relative;
+}
+
+@media (min-width: 992px) {
+  .intro .intro-img {
+   width: 75%;
+   float: right;
+ }
+ .intro .intro-text {
+   left: 0;
+   width: 60%;
+   margin-top: 3rem;
+   position: absolute;
+ }
+ .intro .intro-text .intro-button {
+   width: 100%;
+   left: 0;
+   position: absolute;
+   bottom: -2rem;
+ }
+}
+
+@media (min-width: 1200px) {
+  .intro .intro-text {
+   width: 45%;
+ }
+}
+
+.cta {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-color: rgba(230, 167, 86, 0.9);
+}
+
+.cta .cta-inner {
+  position: relative;
+  padding: 3rem;
+  margin: 0.5rem;
+  background-color: rgba(255, 255, 255, 0.85);
+}
+
+.cta .cta-inner:before {
+  border-radius: 0.5rem;
+  content: '';
+  position: absolute;
+  top: -0.5rem;
+  bottom: -0.5rem;
+  left: -0.5rem;
+  right: -0.5rem;
+  border: 0.25rem solid rgba(255, 255, 255, 0.85);
+  z-index: -1;
+}
+.site-footer
+{
+  background-color:#fff;
+  padding:20px 0 20px;
+  font-size:15px;
+  line-height:24px;
+  color:#343a40;
+}
+.site-footer hr
+{
+  border-top-color:#bbb;
+  opacity:0.5
+}
+.site-footer hr.small
+{
+  margin:20px 0
+}
+.site-footer h6
+{
+  color:#6789a8;
+  font-size:16px;
+  text-transform:uppercase;
+  margin-top:5px;
+  letter-spacing:2px
+}
+.site-footer a
+{
+  color:#343a40;
+}
+.site-footer a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links
+{
+  padding-left:0;
+  list-style:none
+}
+.footer-links li
+{
+  display:block
+}
+.footer-links a
+{
+  color:#343a40
+}
+.footer-links a:active,.footer-links a:focus,.footer-links a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links.inline li
+{
+  display:inline-block
+}
+.site-footer .social-icons
+{
+  text-align:right
+}
+.site-footer .social-icons a
+{
+  width:40px;
+  height:40px;
+  line-height:40px;
+  margin-left:6px;
+  margin-right:0;
+  border-radius:100%;
+  background-color:#d87724;
+}
+.copyright-text
+{
+  margin:0
+}
+@media (max-width:991px)
+{
+  .site-footer [class^=col-]
+  {
+    margin-bottom:30px
+  }
+}
+@media (max-width:767px)
+{
+  .site-footer
+  {
+    padding-bottom:0
+  }
+  .site-footer .copyright-text,.site-footer .social-icons
+  {
+    text-align:center
+  }
+}
+.social-icons
+{
+  padding-left:0;
+  margin-bottom:0;
+  list-style:none
+}
+.social-icons li
+{
+  display:inline-block;
+  margin-bottom:4px
+}
+.social-icons li.title
+{
+  margin-right:15px;
+  text-transform:uppercase;
+  color:#96a2b2;
+  font-weight:700;
+  font-size:13px
+}
+.social-icons a{
+  background-color:#eceeef;
+  color: #fff;
+  font-size:16px;
+  display:inline-block;
+  line-height:44px;
+  width:44px;
+  height:44px;
+  text-align:center;
+  margin-right:8px;
+  border-radius:100%;
+  -webkit-transition:all .2s linear;
+  -o-transition:all .2s linear;
+  transition:all .2s linear
+}
+.social-icons a:active,.social-icons a:focus,.social-icons a:hover
+{
+  color:#fff;
+  background-color:#6789a8;
+}
+.social-icons.size-sm a
+{
+  line-height:34px;
+  height:34px;
+  width:34px;
+  font-size:14px
+}
+.social-icons a.facebook:hover
+{
+  background-color:#1877f2;
+}
+.social-icons a.instagram:hover
+{
+  background-color: #c32aa3;
+}
+.social-icons a.whatsapp:hover
+{
+  background-color: #25d366;
+}
+.social-icons a.whatsapp2:hover
+{
+  background-color: #25d366;
+}
+.social-icons a.whatsapp3:hover
+{
+  background-color: #25d366;
+}
+.social-icons a.envelope:hover
+{
+  background-color:#30528a;
+}
+@media (max-width:767px)
+{
+  .social-icons li.title
+  {
+    display:block;
+    margin-right:0;
+    font-weight:600
+  }
+}
+
+.form-control {
+  border-radius: 50px !important;
+}
+
+.icon-bar {
+  position: fixed;
+  top: 50%;
+  right: 0;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+/* Style the icon bar links */
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 10px;
+  transition: all 0.3s ease;
+  color: white !important;
+  font-size: 20px;
+}
+
+/* Style the social media icons with color, if you want */
+.icon-bar a:hover {
+  background-color: #6789a8;
+}
+
+.facebook {
+  background: #1877f2;
+  color: white;
+}
+
+.instagram {
+  background: #c32aa3;
+  color: white;
+}
+
+.whatsapp {
+  background: #25d366;
+  color: white;
+}
+
+.mail {
+  background: #30528a;
+  color: white;
+}
